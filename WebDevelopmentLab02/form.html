@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Sunil Shah's Soccer Team Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>What Your Soccer Team Says About You!</h1>
+        <p>Take this quiz to discover what your favorite team says about your personality!</p>
+        <form action="results.html" method="GET">
+            <label for="favTeam">Who’s your favorite soccer team?</label>
+            <select id="favTeam" name="favTeam" required>
+                <option value="realMadrid">Real Madrid</option>
+                <option value="barcelona">FC Barcelona</option>
+                <option value="manUnited">Manchester United</option>
+                <option value="liverpool">Liverpool FC</option>
+                <option value="juventus">Juventus</option>
+            </select>
+
+            <label>Your preferred playing style:</label>
+            <input type="radio" name="style" value="aggressive"> Aggressive
+            <input type="radio" name="style" value="tactical"> Tactical
+            <input type="radio" name="style" value="defensive"> Defensive
+            <input type="radio" name="style" value="creative"> Creative
+
+            <label>Rate your loyalty to your team (1-10):</label>
+            <input type="range" id="loyalty" name="loyalty" min="1" max="10">
+
+            <label>Favorite match atmosphere?</label>
+            <input type="checkbox" name="atmosphere" value="loud"> Loud and energetic
+            <input type="checkbox" name="atmosphere" value="strategic"> Strategic and calm
+            <input type="checkbox" name="atmosphere" value="historic"> Full of history
+
+            <button type="submit">Find Out!</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
